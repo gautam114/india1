@@ -1,0 +1,87 @@
+html{ font-size:62.5%;}
+*{padding:0; margin:0; text-transform:capitalize;}
+body{color:white; background:rgba(0,0,0,0.2)url('https://wallpapercave.com/wp/wp1927723.jpg');
+    background-size:cover; background-repeat:no-repeat;}
+
+nav{width:100%; height:15vh; 
+    border:.1px;/* ---------------------  */ 
+    display:flex;
+    align-items: center;
+     background-color:rgba(129,129,129,0.5);}
+  
+#logo{width:40%;
+    
+    }
+#logo{font-size:4rem; display:flex; align-items:center;}
+#menu{width:60%;
+padding:0.4rem;
+display:flex;
+justify-content:space-around;
+font-size: 2.5rem;
+
+}
+#menu>a:first-child{
+    color:black;
+}
+#menu>a{text-decoration:none;
+  color:white;
+   position:relative;
+    }
+ #menu > a::before{
+             content:"";
+             top:100%;
+             width:0%;
+             height: 0.4rem;
+             background:black;
+             position:absolute;   
+            transition: linear all 0.5s;}
+#menu>a:hover::before{
+                      width:100%;
+                      background-color:maroon;
+}
+             /*<--div-->*/
+#maindiv{ font-size:2rem;
+    height:85vh;
+    text-align:center;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+}
+h1{font-size:5rem;
+   text-shadow:2px 2px black;
+    text-transform:uppercase;}
+#s::after{
+         content:"";
+         animation: gautam 10s infinite linear;
+         color:mediumturquoise;
+}
+@keyframes gautam{
+                0%{content:"bombay";}
+                20%{content:"rajasthan";}
+                40%{content:"jaipur";}
+                60%{content:"agra";}
+                80%{content:"himachal";}
+                100%{content:"delhi";}
+}
+
+#india::after{
+          content:"";
+          animation: gotm 10s infinite linear;
+         color:darkolivegreen;
+}
+@keyframes gotm{
+                  0%{content:" india";}
+                50%{content:"bharat";}
+                100%{content:"desh";}
+}
+
+@media(max-width:680px){
+    html{font-size:52%;}
+}
+@media(max-width:536px){
+    html{font-size:40%;} 
+    #logo{width:45%;}
+    #menu{width:55%;}
+}
+@media(max-width:380px){
+    html{font-size:33%;}
+}
